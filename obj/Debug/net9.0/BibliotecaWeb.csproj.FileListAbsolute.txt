@@ -320,10 +320,11 @@ C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets\ms
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.BibliotecaWeb.props
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.BibliotecaWeb.props
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\Bibliote.E9C3CB5F.Up2Date
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\BibliotecaWeb.dll
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\refint\BibliotecaWeb.dll
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\BibliotecaWeb.pdb
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\BibliotecaWeb.genruntimeconfig.cache
 C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\ref\BibliotecaWeb.dll
+C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\BibliotecaWeb.sourcelink.json
+C:\Users\Fernando\source\repos\BibliotecaWeb\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
