@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BibliotecaWeb.Models.Libro>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Registros Libros</h1>
+
+<p>
+    <a asp-action="Create">Nuevo Libro</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idioma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AñoPublicacion)
+            </th>
+            <th>
+                Autor
+            </th>
+            <th>
+                Género
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idioma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AñoPublicacion)
+            </td>
+            <td>
+                    @item.IdAutorNavigation.Nombre
+                    @item.IdAutorNavigation.Apellido
+            </td>
+            <td>
+                    @item.IdGeneroNavigation.Nombre
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-outline-warning" asp-route-id="@item.IdLibro">Editar</a> |
+                    <a asp-action="Details" class="btn btn-outline-info" asp-route-id="@item.IdLibro">Detalle</a> |
+                    <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.IdLibro">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

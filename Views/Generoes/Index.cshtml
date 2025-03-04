@@ -1,0 +1,54 @@
+﻿@model IEnumerable<BibliotecaWeb.Models.Genero>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Registros Género</h1>
+
+<p>
+    <a asp-action="Create">Nuevo Género</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadRecomendada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Popularidad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EdadRecomendada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Popularidad)
+            </td>
+            <td>
+                    <a asp-action="Edit" class="btn btn-outline-warning" asp-route-id="@item.IdGenero">Editar</a> |
+                    <a asp-action="Details" class="btn btn-outline-info" asp-route-id="@item.IdGenero">Detalle</a> |
+                    <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.IdGenero">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
